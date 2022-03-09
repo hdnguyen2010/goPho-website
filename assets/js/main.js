@@ -105,3 +105,7 @@ sr.reveal(`.home__data, .home__img,
             .footer__content`, {
     interval: 200
 })
+
+/*==================== UPDATE YEARLY ====================*/ 
+const date = new Date().getFullYear();
+document.getElementById("year").innerHTML = date;
