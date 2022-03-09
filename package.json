@@ -1,0 +1,23 @@
+{
+  "name": "gopho-website",
+  "version": "1.0.0",
+  "description": "responsive restaurant website",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hdnguyen2010/goPho-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hdnguyen2010/goPho-website/issues"
+  },
+  "homepage": "https://github.com/hdnguyen2010/goPho-website#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
