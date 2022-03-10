@@ -394,6 +394,11 @@ img{
   border-radius: .5rem 0 .5rem 0;
 }
 
+.order__button{
+  text-align: center;
+  padding-top: 1.5rem;
+}
+
 /*========== APP ==========*/
 .app__data{
   text-align: center;
