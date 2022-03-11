@@ -315,7 +315,6 @@ img{
 
 .video{
   width: 500px;
-  border-radius: .5rem;
   justify-self: center;
 }
 
@@ -431,6 +430,20 @@ img{
   margin-bottom: var(--mb-3);
 }
 
+.contact__map{
+  width: 360px;
+  height: 260px;
+  justify-self: center;
+}
+
+.map{
+  width: 360px;
+  height: 260px;
+  justify-self: center;
+  border-radius: .5rem;
+  border: 0;
+}
+
 /*========== FOOTER ==========*/
 .footer__container{
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -505,6 +518,14 @@ img{
   .contact__button{
     justify-self: center;
   }
+
+  .map{
+    width: 360px;
+    height: 260px;
+    justify-self: center;
+    border-radius: .5rem;
+    border: 0;
+  }
 }
 
 @media screen and (min-width: 768px){
@@ -570,6 +591,19 @@ img{
   .home__video{
     width: 500px;
     height: 320px;
+  }
+
+  .contact__map{
+    width: 500px;
+    height: 320px;
+  }
+
+  .map{
+    width: 500px;
+    height: 320px;
+    justify-self: center;
+    border-radius: .5rem;
+    border: 0;
   }
 
   .about__container,
