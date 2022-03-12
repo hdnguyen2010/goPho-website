@@ -1,3 +1,4 @@
+
 /*==================== SHOW MENU ====================*/
 const showMenu = (toggleId, navId) =>{
   const toggle = document.getElementById(toggleId),
@@ -108,3 +109,9 @@ sr.reveal(`.home__data, .home__video,
 /*==================== UPDATE YEARLY ====================*/ 
 const date = new Date().getFullYear();
 document.getElementById("year").innerHTML = date;
+
+/*==================== Medium Zoom ====================*/    
+mediumZoom('.menu__img', {
+    margin: 25,
+    background: '#1D2521',
+})

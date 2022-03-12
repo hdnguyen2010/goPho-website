@@ -382,6 +382,7 @@ img{
 
 .menu__detail{
   margin-bottom: var(--mb-1);
+  padding-bottom: 1.3rem;
 }
 
 .menu__button{
@@ -389,36 +390,13 @@ img{
   bottom: 0;
   right: 0;
   display: flex;
-  padding: .625rem .813rem;
+  padding: 0.625rem .813rem;
   border-radius: .5rem 0 .5rem 0;
 }
 
 .order__button{
   text-align: center;
   padding-top: 1.5rem;
-}
-
-/*========== APP ==========*/
-.app__data{
-  text-align: center;
-}
-
-.app__description{
-  margin-bottom: var(--mb-5);
-}
-
-.app__stores{
-  margin-bottom: var(--mb-4);
-}
-
-.app__store{
-  width: 120px;
-  margin: 0 var(--mb-1);
-}
-
-.app__img{
-  width: 230px;
-  justify-self: center;
 }
 
 /*========== CONTACT ==========*/

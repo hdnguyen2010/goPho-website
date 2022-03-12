@@ -19,5 +19,8 @@
   "homepage": "https://github.com/hdnguyen2010/goPho-website#readme",
   "devDependencies": {
     "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "medium-zoom": "^1.0.6"
   }
 }
