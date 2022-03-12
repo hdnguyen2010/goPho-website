@@ -367,7 +367,7 @@ img{
   margin-bottom: var(--mb-2);
 }
 
-.menu__name, .menu__preci{
+.menu__name{
   font-weight: var(--font-semi-bold);
   color: var(--title-color);
 }
@@ -376,7 +376,7 @@ img{
   font-size: var(--normal-font-size);
 }
 
-.menu__detail, .menu__preci{
+.menu__detail{
   font-size: var(--small-font-size);
 }
 
