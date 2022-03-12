@@ -99,7 +99,7 @@ const sr = ScrollReveal({
 });
 
 sr.reveal(`.home__data, .home__video,
-            .about__data, .about__img, .menu__content,
+            .about__data, .about__img, 
             .order__button, .home__icon,
             .contact__data, .contact__button,
             .footer__content`, {
