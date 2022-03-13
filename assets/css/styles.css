@@ -192,7 +192,7 @@ img{
   margin-bottom: var(--mb-2);
 }
 
-.nav__link, .nav__logo, .nav__toggle{
+.scrollbar__item, .nav__link, .nav__logo, .nav__toggle{
   color: var(--text-color);
   font-weight: var(--font-medium);
 }
@@ -323,7 +323,8 @@ img{
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   overflow: auto;
-  height: 500px;
+  height: 450px;
+  overflow: scroll;
 }
 
 .menu__content{
@@ -373,6 +374,38 @@ img{
   text-align: center;
   padding-top: 1.5rem;
 }
+
+/*========== MENU SCROLLBAR ==========*/
+.menu__scrollbar{
+  height: var(--header-height);
+  display: flex;
+  overflow-x: auto;
+  align-items: center;
+  width: 100%;
+  background-color: var(--first-color);
+  padding-top: 1rem;
+}
+
+.menu__scrollbar::-webkit-scrollbar{
+  width: 0;
+}
+
+.scrollbar__item{
+  text-align: center;
+  color: #FFF;
+  white-space: nowrap;
+  padding: 10px 10px;
+}
+
+/* .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .menu__scrollbar{
+  padding-top: 10px;
+} */
 
 /*========== CONTACT ==========*/
 .contact__container{
@@ -427,7 +460,7 @@ img{
   margin-bottom: var(--mb-2);
 }
 
-.footer__link{
+.footer__link, .footer__address, .footer__number{
   display: inline-block;
   color: var(--text-color);
   margin-bottom: var(--mb-1);
@@ -447,19 +480,17 @@ img{
 /*========== MEDIA QUERIES ==========*/
 @media screen and (min-width: 576px){
   .home__container,
-  .about__container,
-  .app__container{
+  .about__container{
     grid-template-columns: repeat(2,1fr);
     align-items: center;
   }
 
   .about__data, .about__initial,
-  .app__data, .app__initial,
   .contact__container, .contact__initial{
     text-align: initial;
   }
 
-  .about__img, .app__img{
+  .about__img{
     width: 380px;
     order: -1;
   }
@@ -514,15 +545,14 @@ img{
     justify-items: center;
   }
 
-  .services__container,
   .menu__container{
     margin-top: var(--mb-6);
   }
 
   .menu__container{
-    grid-template-columns: repeat(4, 210px);
+    grid-template-columns: repeat(3, 210px);
     column-gap: 2rem;
-    height: 600px;
+    height: 540px;
   }
   
   .menu__content{
@@ -530,10 +560,6 @@ img{
   }
   .menu__img{
     width: 130px;
-  }
-
-  .app__store{
-    margin: 0 var(--mb-1) 0 0;
   }
 }
 
@@ -561,8 +587,13 @@ img{
     border: 0;
   }
 
-  .about__container,
-  .app__container{
+  .menu__container{
+    grid-template-columns: repeat(3, 210px);
+    column-gap: 2rem;
+    height: 540px;
+  }
+
+  .about__container{
     column-gap: 7rem;
   }
 }

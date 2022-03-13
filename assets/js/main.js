@@ -16,7 +16,7 @@ showMenu('nav-toggle','nav-menu')
 
 /*==================== REMOVE MENU MOBILE ====================*/
 const navLink = document.querySelectorAll('.nav__link')
-
+// document.querySelector('#main').addEventListener('click', closeNav)
 function linkAction(){
     const navMenu = document.getElementById('nav-menu')
     // When we click on each nav__link, we remove the show-menu class
@@ -110,8 +110,26 @@ sr.reveal(`.home__data, .home__video,
 const date = new Date().getFullYear();
 document.getElementById("year").innerHTML = date;
 
-/*==================== Medium Zoom ====================*/    
+/*==================== MEDIUM ZOOM ====================*/    
 mediumZoom('.menu__img', {
-    margin: 25,
     background: '#1D2521',
 })
+
+/*==================== STICKY ====================*/   
+// When the user scrolls the page, execute myFunction
+// window.onscroll = function() {myFunction()};
+
+// // Get the header
+// var header = document.getElementById("menu");
+
+// // Get the offset position of the navbar
+// var sticky = header.offsetTop;
+
+// // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+// function myFunction() {
+//   if (window.pageYOffset > sticky) {
+//     header.classList.add("sticky");
+//   } else {
+//     header.classList.remove("sticky");
+//   }
+// }
