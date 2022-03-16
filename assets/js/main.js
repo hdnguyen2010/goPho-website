@@ -113,6 +113,7 @@ document.getElementById("year").innerHTML = date;
 /*==================== MEDIUM ZOOM ====================*/    
 mediumZoom('.menu__img', {
     background: '#1D2521',
+    opacity:0.4,
 })
 
 /*==================== STICKY ====================*/   

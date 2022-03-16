@@ -322,9 +322,14 @@ img{
 .menu__container{
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
+  /* overflow: auto; */
+  /* height: 450px; */
+  /* overflow: scroll; */
+}
+.scroll__menu{
   overflow: auto;
   height: 450px;
-  overflow: scroll;
+  /* overflow: scroll; */
 }
 
 .menu__content{
@@ -375,15 +380,18 @@ img{
   padding-top: 1.5rem;
 }
 
+.menu__food{
+  /* position: relative; */
+  padding-top: 8rem;
+}
+
 /*========== MENU SCROLLBAR ==========*/
 .menu__scrollbar{
-  height: var(--header-height);
   display: flex;
   overflow-x: auto;
   align-items: center;
-  width: 100%;
   background-color: var(--first-color);
-  padding-top: 1rem;
+  overflow-y: hidden;
 }
 
 .menu__scrollbar::-webkit-scrollbar{
@@ -391,8 +399,8 @@ img{
 }
 
 .scrollbar__item{
-  text-align: center;
   color: #FFF;
+  margin-bottom: 0;
   white-space: nowrap;
   padding: 10px 10px;
 }
